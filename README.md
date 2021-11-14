@@ -2,18 +2,15 @@
 ## 1. `git show aefea`
 aefead2207ef7e2aa5dc81a34aedf0cad4c32545
 
-## 2. tag: v0.12.23
+## 2. `git show 85024d3`
+tag: v0.12.23
 
-`git show 85024d3`
-
-## 3. 2 родителя
-56cd7859e05c36c06b56d013b55a252d0bb7e158
+## 3. `git show b8d720^1` `git show b8d720^2`
+2 родителя
+<br>56cd7859e05c36c06b56d013b55a252d0bb7e158
 <br>9ea88f22fc6269854151c571162c5bcf958bee2b
 
-`git show b8d720^1`
-`git show b8d720^2`
-
-## 4. 
+## 4. `git log v0.12.23..v0.12.24`
 commit 33ff1c03bb960b332be3af2e333462dde88b279e (tag: v0.12.24)
 	<br>v0.12.24
 
@@ -51,25 +48,16 @@ commit dd01a35078f040ca984cdd349f18d0b67e486c35
 commit 225466bc3e5f35baa5d07197bbc079345b77525e
 	<br>Cleanup after v0.12.23 release
 
-`git log v0.12.23..v0.12.24`
+## 5. `git grep -p 'func providerSource(*'` `git log -L :providerSource:provider_source.go`
+commit 8c928e83589d90a031f811fae52a81be7153e82f
 
-## 5. commit 8c928e83589d90a031f811fae52a81be7153e82f
+## 6. `git grep -p 'globalPluginDirs'` `git log -L :globalPluginDirs:plugins.go`
 
-`git grep -p 'func providerSource(*'`
-`git log -L :providerSource:provider_source.go`
-
-## 6.78b12205587fe839f10d946ea3fdc06719decb05
+78b12205587fe839f10d946ea3fdc06719decb05
 <br>52dbf94834cb970b510f2fba853a5b49ad9b1a46
 <br>41ab0aef7a0fe030e84018973a64135b11abcd70
 <br>66ebff90cdfaa6938f26f908c7ebad8d547fea17
 <br>8364383c359a6b738a436d1b7745ccdce178df47
 
-`git grep -p 'globalPluginDirs'`
-`git log -L :globalPluginDirs:plugins.go`
-
-
-## 7. `Martin Atkins <mart@degeneration.co.uk>`
-
-`git log -S synchronizedWriters`
-`git show 5ac311e2a91e381e2f52234668b49ba670aa0fe5`
-
+## 7. `git log -S synchronizedWriters` `git show 5ac311e2a91e381e2f52234668b49ba670aa0fe5`
+`Martin Atkins <mart@degeneration.co.uk>`
